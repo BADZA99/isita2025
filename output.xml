@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.10.7 on win32)" generated="2025-05-16T20:06:07.467357" rpa="false" schemaversion="5">
+<suite id="s1" name="Exercice" source="C:\Users\LENOVO\Desktop\M1 GL\QA TEST\isita2025\exercice.robot">
+<test id="s1-t1" name="CAS_TEST_1" line="8">
+<kw name="Ouverture Navigateur">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-16T20:06:11.626689" level="INFO">Opening browser 'chrome' to base url 'https://robotcode.io/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-16T20:06:11.625686" elapsed="66.801407"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-16T20:07:21.437663" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-16T20:07:18.428094" elapsed="3.009569"/>
+</kw>
+<status status="PASS" start="2025-05-16T20:06:11.615691" elapsed="69.822973"/>
+</kw>
+<kw name="Aller a la page Requirement">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-16T20:07:21.442665" level="INFO">Clicking element 'xpath=/html/body/div[1]/div/div/div/div[1]/div/div[1]/div/div[2]/a'.</msg>
+<arg>xpath=/html/body/div[1]/div/div/div/div[1]/div/div[1]/div/div[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-16T20:07:21.441667" elapsed="7.259953"/>
+</kw>
+<status status="PASS" start="2025-05-16T20:07:21.439666" elapsed="7.262956"/>
+</kw>
+<kw name="Verifier qu'on est bien sur la page Requirement">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-05-16T20:07:47.736278" level="INFO">Current page contains text 'Requirements'.</msg>
+<arg>Requirements</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-05-16T20:07:28.704625" elapsed="19.033653"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-16T20:07:48.744679" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-16T20:07:47.740298" elapsed="1.004381"/>
+</kw>
+<status status="PASS" start="2025-05-16T20:07:28.703622" elapsed="20.041057"/>
+</kw>
+<kw name="Fermer le navigateur">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-16T20:07:48.755682" elapsed="28.970330"/>
+</kw>
+<status status="PASS" start="2025-05-16T20:07:48.753678" elapsed="28.972334"/>
+</kw>
+<status status="PASS" start="2025-05-16T20:06:11.522688" elapsed="126.204321"/>
+</test>
+<status status="PASS" start="2025-05-16T20:06:07.474354" elapsed="130.394656"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Exercice" id="s1" pass="1" fail="0" skip="0">Exercice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

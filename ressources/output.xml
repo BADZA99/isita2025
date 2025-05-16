@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.10.7 on win32)" generated="2025-05-16T20:32:02.110938" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\LENOVO\Desktop\M1 GL\QA TEST\isita2025\ressources\test.robot">
+<test id="s1-t1" name="Connexion Jenkins avec mauvais mot de passe" line="10">
+<kw name="Ouvrir Jenkins">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-16T20:32:03.099933" level="INFO">Opening browser 'chrome' to base url 'http://18.201.83.167:8080'.</msg>
+<arg>${JENKINS_URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-16T20:32:03.098931" elapsed="13.972958"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-16T20:32:17.072887" elapsed="0.381001"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=j_username</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-05-16T20:32:17.454892" elapsed="0.119997"/>
+</kw>
+<status status="PASS" start="2025-05-16T20:32:03.096932" elapsed="14.478960"/>
+</kw>
+<kw name="Saisir identifiants invalides">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-16T20:32:17.620885" level="INFO">Typing text 'admin' into text field 'id=j_username'.</msg>
+<arg>id=j_username</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-16T20:32:17.617888" elapsed="1.333000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-16T20:32:18.952889" level="INFO">Typing text 'mauvais_mot_de_passe' into text field 'name=j_password'.</msg>
+<arg>name=j_password</arg>
+<arg>${BAD_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-16T20:32:18.951887" elapsed="1.107000"/>
+</kw>
+<status status="PASS" start="2025-05-16T20:32:17.614887" elapsed="2.445016"/>
+</kw>
+<kw name="Cliquer sur Sign in">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-16T20:32:20.079890" level="INFO">Clicking button 'name=Submit'.</msg>
+<arg>name=Submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-16T20:32:20.078886" elapsed="1.209093"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-16T20:32:22.296975" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-16T20:32:21.288985" elapsed="1.007990"/>
+</kw>
+<status status="PASS" start="2025-05-16T20:32:20.076889" elapsed="2.221093"/>
+</kw>
+<kw name="Fermer le navigateur" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-16T20:32:22.300979" elapsed="3.601191"/>
+</kw>
+<status status="PASS" start="2025-05-16T20:32:22.298978" elapsed="3.603192"/>
+</kw>
+<status status="PASS" start="2025-05-16T20:32:03.095937" elapsed="23.011233"/>
+</test>
+<status status="PASS" start="2025-05-16T20:32:02.115934" elapsed="24.010239"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test" id="s1" pass="1" fail="0" skip="0">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

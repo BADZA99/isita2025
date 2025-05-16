@@ -8,5 +8,5 @@ ${URL}     https://robotcode.io/
 Ouvrir La Page Robot
     Open Browser    ${URL}    chrome
     Sleep    5
-    Page Should Contain    Ultimateer
+    Page Should Contain    Ultimate
     Close Browser
